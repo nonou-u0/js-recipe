@@ -11,7 +11,12 @@ const isSleepy = sleepiness > 90
 
 const isNotHappyAndSleepy = !isHappy && isSleepy
 
+const isHappyAndNotSleepy = isHappy && !isSleepy
+
 // 以下のコメントアウトを外して確認してみましょう
-// console.log("isNotHappyAndSleepy" + "は" + true + "ですか？", isNotHappyAndSleepy)
-// console.log("isHappy", isHappy)
-// console.log("isSleepy", isSleepy)
+console.log(
+  "isNotHappyAndSleepy" + "は" + true + "ですか？",
+  isNotHappyAndSleepy,
+)
+console.log("isHappy", isHappy)
+console.log("isSleepy", isSleepy)
