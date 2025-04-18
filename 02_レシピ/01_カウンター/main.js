@@ -4,7 +4,7 @@ const doubleButton = document.getElementById("double-button")
 
 let count = 1
 
-// ボタン要素のonclickハンドラに関数を代入
+// ボタン要素のonclickハンドラに関数を代入する
 plusButton.onclick = function () {
   // count を更新
   count -= 1
