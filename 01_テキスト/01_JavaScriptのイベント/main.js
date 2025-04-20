@@ -1,6 +1,7 @@
 const button = document.getElementById("button")
 const inputText = document.getElementById("input-text")
-const inputDate = document.getElementById("input-data")
+const inputDate = document.getElementById("input-date")
+const inputKey = document.getElementById("input-key")
 
 const alertMessage = function() {
   alert("クリックしたね")
@@ -8,9 +9,16 @@ const alertMessage = function() {
 
 button.onclick=alertMessage
 
-const sayHello = function() {
-  console.log("hello")
+const logValue = function (e) {
+  console.log(e.target.value)
 }
 
-inputText.oninput = sayHello
-inputDate.oninput = sayHello
+inputText.oninput = logValue
+inputDate.oninput = logValue
+
+const onkeydown = function(e) {
+  console.log(e.key)
+}
+
+inputKey.onkeydown = onkeydown
+
